@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import vuetify from '@/plugins/vuetify'
+import router from "@/plugins/router";
 import App from '@/App.vue'
 import $ from "jquery"
 import { descending } from 'd3-array';
@@ -74,6 +75,7 @@ async function add_archived_reports_button() {
 
 new Vue({
   vuetify,
+  router,
   render: h => h(App)
 }).$mount('#app')
 
@@ -85,6 +87,10 @@ $(document).ready(function () {
 
   // add a help message
   add_help_message();
+
+  // Turn off FA
+  window.FontAwesome.config.observeMutations = false;
+  window.FontAwesome.config.searchPseudoElements = false;
 
 
 })

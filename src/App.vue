@@ -1,37 +1,43 @@
 <template>
-  <v-app>
-    <v-main>
-      <diversity-report />
-    </v-main>
-  </v-app>
+  <div data-vuetify>
+    <v-app>
+      <v-main>
+        <v-tabs
+          v-model="tab"
+          background-color="transparent"
+          color="#2176d2"
+          centered
+          class="tab-bar"
+        >
+          <v-tab key="analysis" to="/" :ripple="false"> Analysis </v-tab>
+          <v-tab key="explorer" to="/explorer" :ripple="false">
+            Diversity Explorer
+          </v-tab>
+        </v-tabs>
+
+        <router-view></router-view>
+      </v-main>
+    </v-app>
+  </div>
 </template>
 
 <script>
 export default {
   name: "DiversityReportApp",
-  components: {
-    // eslint-disable-next-line
-    "diversity-report": require("@/reports/" + __REPORT_TAG__ + "/index.vue")
-      .default,
+  data() {
+    return { tab: null };
   },
 };
 </script>
 
 <style>
-.header-title {
-  font-size: 1.7rem;
-  font-family: inherit;
-  font-weight: 500;
-  margin-right: 1rem;
-}
-.header-subtitle {
-  font-style: italic;
-  font-size: 1rem;
-}
-.card-footer {
-  font-size: 0.9rem;
-}
 .section:nth-child(n + 2) {
   margin-top: 2.5rem;
+}
+</style>
+
+<style>
+.tab-bar {
+  margin-bottom: 50px;
 }
 </style>

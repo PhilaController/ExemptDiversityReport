@@ -1,6 +1,5 @@
-import { FISCAL_YEAR, QUARTER } from "@/config"
+import { FISCAL_YEAR } from "@/config"
 import { csv } from 'd3-fetch';
-import { format } from 'd3-format';
 
 
 
@@ -15,13 +14,13 @@ function getReportTag() {
 function getDownloadURL(key) {
 
     let folder = getReportTag();
-    return `https://cash-report-public.s3.amazonaws.com/${folder}/${key}.csv`;
+    return `https://diversity-report-public.s3.amazonaws.com/${folder}/${key}.csv`;
 }
 
 function fetch(key) {
     try {
         let data = csv(getDownloadURL(key));
-        return data
+        return data;
     } catch (e) {
         console.error(e);
     }
