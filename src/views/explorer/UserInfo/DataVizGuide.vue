@@ -4,16 +4,22 @@
       <!-- Chart guide text -->
       <v-col class="chart-guide-text mb-2" cols="12" sm="12" md="8" lg="8">
         <p>
-          The data is visualized relative to Philadelphia's overall population
-          statistics according to the latest Census data. The color gray
-          indicates that a particular race or ethnicity is represented at the
-          same level as the city's census, while the colors red and blue
-          indicate overrepresentation and underrepresentation, respectively.
+          Rows of the heatmap show diversity data for a specific department
+          while columns represent different races and ethnicities. The data is
+          visualized relative to Philadelphia's overall population statistics
+          according to the latest Census data. The color gray indicates that a
+          particular race or ethnicity is represented at the same level as the
+          city's census, while the colors red and blue indicate
+          overrepresentation and underrepresentation, respectively.
         </p>
 
-        <p>
-          Hover over (click on mobile) individual cells to see diversity numbers
-          for specific departments.
+        <p v-if="!$vuetify.breakpoint.mobile">
+          Hover over individual cells to see diversity numbers for a specific
+          department.
+        </p>
+        <p v-if="$vuetify.breakpoint.mobile">
+          Click on individual cells to see diversity numbers for a specific
+          department.
         </p>
       </v-col>
       <!-- Chart guide legend -->
