@@ -15,7 +15,9 @@
           </v-tab>
         </v-tabs>
 
-        <router-view></router-view>
+        <transition name="fade" mode="out-in">
+          <router-view :key="$route.path" />
+        </transition>
       </v-main>
     </v-app>
   </div>
@@ -36,5 +38,13 @@ export default {
 }
 .tab-bar {
   margin-bottom: 50px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

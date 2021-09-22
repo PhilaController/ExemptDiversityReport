@@ -208,15 +208,6 @@ export default {
       return data;
     },
   },
-
-  watch: {
-    data(value) {
-      console.log(value);
-      if (this.data !== null) {
-        this.chartData = this.formatData(this.data);
-      }
-    },
-  },
 };
 </script>
 

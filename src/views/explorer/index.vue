@@ -3,14 +3,17 @@
     <p>
       In the following visualizations, the diversity data for each City
       department or elected office is presented in two separate heatmaps, one
-      for all departments that fall under the Mayor's authority (left) and one
-      for independently elected offices (right). Rows of the heatmap show
-      results for a specific department while columns represent different races
-      and ethnicities. The data is visualized relative to Philadelphia's overall
-      population statistics according to the latest Census data. The color gray
-      indicates that a particular race or ethnicity is represented at the same
-      level as the city's Census, while the colors red and blue indicate
-      overrepresentation and underrepresentation, respectively.
+      for all departments that fall under the Mayor's authority
+      <span v-if="!$vuetify.breakpoint.mobile">(left)</span> and one for
+      independently elected offices
+      <span v-if="!$vuetify.breakpoint.mobile">(right)</span>. Rows of the
+      heatmap show results for a specific department while columns represent
+      different races and ethnicities. The data is visualized relative to
+      Philadelphia's overall population statistics according to the latest
+      Census data. The color gray indicates that a particular race or ethnicity
+      is represented at the same level as the city's Census, while the colors
+      red and blue indicate overrepresentation and underrepresentation,
+      respectively.
     </p>
 
     <p>
