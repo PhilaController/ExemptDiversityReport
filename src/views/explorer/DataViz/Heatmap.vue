@@ -34,6 +34,7 @@ export default {
     "cellSize",
     "kind",
     "marginLeft",
+    "marginTop",
     "title",
     "data",
     "censusData",
@@ -42,7 +43,12 @@ export default {
   ],
   data() {
     return {
-      margin: { top: 200, right: 20, bottom: 30, left: this.marginLeft },
+      margin: {
+        top: this.marginTop,
+        right: 50,
+        bottom: 30,
+        left: this.marginLeft,
+      },
       selectedData: null,
       showTooltip: false,
       colorFactor: 1.1,
@@ -69,13 +75,10 @@ export default {
       return `Tabular representation of the SVG graphic, showing diversity statistics by department for ${this.title}`;
     },
     yLabelSize() {
-      return window.matchMedia("(min-width: 800px)").matches ? "1em" : "0.7em";
-    },
-    titleSize() {
-      return "1.7em";
+      return window.matchMedia("(min-width: 768px)").matches ? "1em" : "0.8em";
     },
     xLabelSize() {
-      return window.matchMedia("(min-width: 800px)").matches ? "1em" : "0.8em";
+      return window.matchMedia("(min-width: 768px)").matches ? "1em" : "0.8em";
     },
     rowOrder() {
       return this.sortHeatMap(this.sortBy);
@@ -152,7 +155,7 @@ export default {
       // rotate ticks for x axis
       gx.selectAll("text")
         .style("text-anchor", "start")
-        .attr("transform", "rotate(-90)")
+        .attr("transform", "rotate(-70)")
         .attr("dy", "0.5em")
         .attr("dx", "0.5em");
 
@@ -231,15 +234,6 @@ export default {
           return d.race === "Total Number" ? d3.format(",.0f")(+d.count) : "";
         })
         .attr("class", "total-number-text");
-
-      // Add title to graph
-      svg
-        .append("text")
-        .attr("transform", `translate(${-this.margin.left + this.w / 2}, -160)`)
-        .attr("text-anchor", "middle")
-        .style("font-size", this.titleSize)
-        .attr("class", "svg-title")
-        .text(this.title);
     },
     getFillColor(d) {
       let value = 0;
@@ -306,7 +300,7 @@ export default {
         stroke: "black",
       });
     },
-    mousemove(event) {
+    mousemove(event, d) {
       // container offset
       let o = $(`#heatmap-wrapper-${this.kind}`).offset();
 
@@ -315,16 +309,26 @@ export default {
       let w = t.width();
       let h = t.height();
 
+      // Which column did we click?
+      let j = this.races.indexOf(d.race);
+
+      // Figure out horizontal alignment
+      let factor = 0.5; // align to center
+      if (this.$vuetify.breakpoint.mobile) {
+        factor = 0.8 + j * 0.04; // align to right
+      }
+
       // show tooltip above
-      if (event.clientY + h > window.innerHeight) {
+      let buffer = 75;
+      if (event.clientY + h + buffer > window.innerHeight) {
         $(`#heatmap-wrapper-${this.kind} .my-tooltip`).css({
-          left: event.pageX - o.left - 0.5 * w + "px",
+          left: event.pageX - o.left - factor * w + "px",
           top: event.pageY - o.top - h - 40 + "px",
         });
       } else {
         // show tooltip below
         $(`#heatmap-wrapper-${this.kind} .my-tooltip`).css({
-          left: event.pageX - o.left - 0.5 * w + "px",
+          left: event.pageX - o.left - factor * w + "px",
           top: event.pageY - o.top + 40 + "px",
         });
       }
@@ -380,22 +384,13 @@ export default {
       // rotate ticks for x axis
       gx.selectAll("text")
         .style("text-anchor", "start")
-        .attr("transform", "rotate(-90)")
+        .attr("transform", "rotate(-70)")
         .attr("dy", "0.5em")
         .attr("dx", "0.5em");
 
       svg.selectAll("rect").remove();
       svg.selectAll(".total-number-text").remove();
       svg.selectAll(".svg-title").remove();
-
-      // add title
-      svg
-        .append("text")
-        .attr("transform", `translate(${-this.margin.left + this.w / 2}, -160)`)
-        .attr("text-anchor", "middle")
-        .style("font-size", this.titleSize)
-        .attr("class", "svg-title")
-        .text(this.title);
 
       const rects = svg.selectAll("rect").data(this.filteredData, function (d) {
         return `${vueComponent.showAllRaces}_${d.department}_${d.race}`;
@@ -435,10 +430,7 @@ export default {
         .attr("class", "total-number")
         .style("opacity", 1e-6)
         .attr("x", function (d) {
-          return (
-            scale.x(vueComponent.races.indexOf(d.race)) +
-            0.5 * scale.x.bandwidth()
-          );
+          return scale.x(vueComponent.races.indexOf(d.race));
         })
         .attr("y", function (d) {
           return (
@@ -488,3 +480,4 @@ export default {
   },
 };
 </script>
+

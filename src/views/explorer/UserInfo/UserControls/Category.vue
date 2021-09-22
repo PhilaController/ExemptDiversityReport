@@ -19,23 +19,30 @@ export default {
   name: "Category",
   data() {
     return {
-      options: [
-        { text: "All Exempt Employees", value: "all" },
-        {
-          text: "Exempt Employees, Salaries At Least $90K",
-          value: "executive",
-        },
-        { text: "Newly Hired Exempts", value: "new" },
-        {
-          text: "Newly Hired Exempts, Salaries At Least $90K",
-          value: "new_executive",
-        },
-      ],
       selectedCategory: null,
     };
   },
   created() {
     this.selectedCategory = this.$route.params.category;
+  },
+  computed: {
+    options() {
+      let label;
+      if (this.$vuetify.breakpoint.xs) label = "\u2265" + "$90K";
+      else label = "Salaries At Least $90K";
+      return [
+        { text: "All Exempt Employees", value: "all" },
+        {
+          text: "Exempt Employees, " + label,
+          value: "executive",
+        },
+        { text: "Newly Hired Exempts", value: "new" },
+        {
+          text: "Newly Hired Exempts, " + label,
+          value: "new_executive",
+        },
+      ];
+    },
   },
   methods: {
     handleChange(value) {
@@ -60,6 +67,12 @@ export default {
 #category-select-wrapper {
   width: 500px;
   max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .v-menu__content {
+    left: 0px !important;
+  }
 }
 </style>
 

@@ -4,6 +4,7 @@ import router from "@/plugins/router";
 import App from '@/App.vue'
 import $ from "jquery"
 import { descending } from 'd3-array';
+import { getDownloadURL, getReportTag } from "@/utils"
 
 Vue.config.productionTip = false
 
@@ -73,6 +74,22 @@ async function add_archived_reports_button() {
     .after(dropdown);
 }
 
+function add_data_button() {
+
+  if ($("#dataDownloadButton").length > 0) return;
+
+  // add a new button
+  let thisReport = getReportTag()
+  let url = getDownloadURL(`exempt-diversity-data-${thisReport}`);
+  let btn = `<a id="dataDownloadButton" href="${url}" class="btn btn-primary btn-block btn-block">
+            <i class="fas fa-download"></i>
+            Download Data
+        </a>`;
+
+  // add download data button and remove the report button
+  $(".entry-header .btn").after(btn);
+}
+
 new Vue({
   vuetify,
   router,
@@ -82,7 +99,8 @@ new Vue({
 // When document is loaded 
 $(document).ready(function () {
 
-  // Add the button
+  // Add the buttons
+  add_data_button()
   add_archived_reports_button();
 
   // add a help message

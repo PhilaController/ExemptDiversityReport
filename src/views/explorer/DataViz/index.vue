@@ -1,8 +1,15 @@
 <template>
-  <v-container id="heatmaps" class="mt-5">
+  <div id="heatmaps">
     <v-row no-gutters>
       <!-- Mayoral Admin -->
-      <v-col cols="12" sm="12" md="12" lg="6">
+      <v-col
+        cols="12"
+        sm="12"
+        md="12"
+        lg="6"
+        class="d-flex flex-column align-items-center"
+      >
+        <div class="heatmap-title">Mayoral Administration</div>
         <HeatMap
           v-if="chartData.length > 0"
           :data="dataAdmin"
@@ -12,12 +19,20 @@
           :cellSize="cellSize"
           kind="admin"
           :marginLeft="marginLeft"
+          :marginTop="marginTop"
           title="Mayoral Administration"
         />
       </v-col>
 
       <!-- Independent -->
-      <v-col cols="12" sm="12" md="12" lg="6">
+      <v-col
+        cols="12"
+        sm="12"
+        md="12"
+        lg="6"
+        class="d-flex flex-column align-items-center"
+      >
+        <div class="heatmap-title">Independent Offices</div>
         <HeatMap
           v-if="chartData.length > 0"
           :data="dataIndependents"
@@ -27,11 +42,12 @@
           :cellSize="cellSize"
           kind="indep"
           :marginLeft="marginLeft"
+          :marginTop="marginTop"
           title="Independent Offices"
         />
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -98,10 +114,19 @@ export default {
       );
     },
     cellSize() {
-      return this.setCellSize();
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        return 40;
+      } else return 24;
     },
     marginLeft() {
-      return this.setMarginLeft();
+      if (window.matchMedia("(min-width: 960px)").matches) {
+        return 200;
+      } else return 170;
+    },
+    marginTop() {
+      if (window.matchMedia("(min-width: 960px)").matches) {
+        return 160;
+      } else return 125;
     },
     showAllRaces() {
       return this.raceBreakdownToggle === "All Races/Ethnicities";
@@ -182,17 +207,6 @@ export default {
       }
       return data;
     },
-
-    setCellSize() {
-      if (window.matchMedia("(min-width: 768px)").matches) {
-        return 40;
-      } else return 22;
-    },
-    setMarginLeft() {
-      if (window.matchMedia("(min-width: 960px)").matches) {
-        return 270;
-      } else return 200;
-    },
   },
 
   watch: {
@@ -208,8 +222,11 @@ export default {
 
 
 <style scoped>
-.indent-left {
-  margin-left: 9em;
+.heatmap-title {
+  font-size: 1.7rem;
+}
+#heatmaps {
+  margin-top: 3rem;
 }
 </style>
 

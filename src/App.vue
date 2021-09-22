@@ -34,9 +34,6 @@ export default {
 .section:nth-child(n + 2) {
   margin-top: 2.5rem;
 }
-</style>
-
-<style>
 .tab-bar {
   margin-bottom: 50px;
 }

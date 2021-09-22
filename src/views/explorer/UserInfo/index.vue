@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <DataVizGuide />
     <UserControls
       class="mt-5"
@@ -15,6 +15,3 @@ import UserControls from "./UserControls";
 
 export default { name: "UserInfo", components: { DataVizGuide, UserControls } };
 </script>
-
-<style>
-</style>

@@ -17,7 +17,13 @@
         </p>
       </v-col>
       <!-- Chart guide legend -->
-      <v-col class="chart-guide-legend" cols="12" sm="12" md="4" lg="4">
+      <v-col
+        class="chart-guide-legend d-flex justify-content-center"
+        cols="12"
+        sm="12"
+        md="4"
+        lg="4"
+      >
         <svg :width="width" :height="height">
           <g id="viewer-guide-canvas" :transform="transformProperty"></g>
         </svg>
@@ -36,10 +42,12 @@ export default {
       cellSize: 30,
       margin: { top: 5, right: 5, bottom: 5, left: 5 },
       labelFontSize: "1.2rem",
-      width: 400,
     };
   },
   computed: {
+    width() {
+      return Math.min(0.9 * this.$vuetify.breakpoint.width, 400);
+    },
     data() {
       return [
         { id: 0, value: 0.1, label: "", offset: null },

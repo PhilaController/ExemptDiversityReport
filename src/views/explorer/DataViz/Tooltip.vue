@@ -22,7 +22,9 @@
             :key="`census-${race}`"
           >
             <template v-if="race !== 'Total Number'">
-              <td class="line-header">{{ race }}</td>
+              <td class="line-header">
+                {{ race == "Non-White" ? "Diverse" : race }}
+              </td>
               <td>{{ formatter(100 * censusData.get(race)) }}</td>
             </template>
           </tr>
@@ -76,6 +78,7 @@ export default {
         "Public Health": "Department of Public Health",
         Aviation: "Division of Aviation",
         "Labor Relations": "Mayor's Office of Labor Relations",
+        "Arts & Culture": "Arts, Culture, & Creative Economy",
       },
     };
   },
@@ -136,15 +139,15 @@ td {
   text-align: center;
   padding: 10px;
   font: 1rem sans-serif;
-  background: #212121;
+  background: #424242;
   border-radius: 8px;
   pointer-events: none;
   border: 1px solid #cdcdcd;
-  opacity: 0.9;
+  opacity: 1;
   display: block;
-  max-width: 300px;
-  min-width: 300px;
+  width: 250px;
   color: #eeeeee;
+  z-index: 9999;
 }
 
 .tooltip-title {
