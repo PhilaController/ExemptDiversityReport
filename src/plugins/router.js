@@ -12,11 +12,10 @@ export default new Router({
             component: require("@/views/analysis/" + __REPORT_TAG__ + "/index.vue").default,
         },
         {
-            path: "/explorer/:category",
+            path: "/explorer",
             name: "heatmap",
             component: Explorer
         },
-        { path: "/explorer", redirect: "/explorer/all" }
     ],
 });
 

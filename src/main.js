@@ -90,6 +90,16 @@ function add_data_button() {
   $(".entry-header .btn").after(btn);
 }
 
+function adjust_header_layout() {
+  $(".entry-header .row")
+    .first()
+    .addClass("d-flex ml-2 mr-2 flex-sm-row flex-column justify-content-between flex-nowrap");
+
+  $(".entry-header .col-sm-9").removeClass("col-sm-9")
+  $(".entry-header .col-sm-3")
+    .removeClass("col-sm-3")
+}
+
 new Vue({
   vuetify,
   router,
@@ -105,6 +115,9 @@ $(document).ready(function () {
 
   // add a help message
   add_help_message();
+
+  // adjust the header layout
+  adjust_header_layout();
 
   // Turn off FA
   window.FontAwesome.config.observeMutations = false;

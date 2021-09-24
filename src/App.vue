@@ -1,5 +1,5 @@
 <template>
-  <div data-vuetify>
+  <div id="diversity-report-app">
     <v-app>
       <v-main>
         <v-tabs
@@ -15,9 +15,8 @@
           </v-tab>
         </v-tabs>
 
-        <transition name="fade" mode="out-in">
-          <router-view :key="$route.path" />
-        </transition>
+        <!-- Router view -->
+        <router-view :key="$route.path" />
       </v-main>
     </v-app>
   </div>
@@ -39,12 +38,7 @@ export default {
 .tab-bar {
   margin-bottom: 50px;
 }
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
+#diversity-report-app {
+  overflow-x: hidden !important;
 }
 </style>

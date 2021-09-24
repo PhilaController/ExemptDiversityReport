@@ -6,7 +6,7 @@
     <!-- Data Selection -->
 
     <div class="guide-title">Data Selection</div>
-    <Category />
+    <Category @change="(value) => $emit('category-change', value)" />
     <RaceBreakdown
       class="mt-1"
       @change="(value) => $emit('race-breakdown-change', value)"

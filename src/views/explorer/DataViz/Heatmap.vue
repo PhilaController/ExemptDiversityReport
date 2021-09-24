@@ -481,3 +481,14 @@ export default {
 };
 </script>
 
+
+<style>
+#heatmap-wrapper-indep {
+  margin-bottom: 200px;
+}
+@media screen and (min-width: 1265px) {
+  #heatmap-wrapper-admin {
+    margin-bottom: 200px;
+  }
+}
+</style>

@@ -9,8 +9,8 @@
         (right)</span
       >. Using the buttons below, data can be broken out into four categories:
       all exempt employees, exempt employees hired in {{ reportTag }}, exempt
-      employees with salaries of at least $90,000, and the subset of new hires
-      with salaries of at least $90,000.
+      employees with salaries of at least $90,000 ("executive" positions), and
+      the subset of new hires with salaries of at least $90,000.
     </p>
 
     <!-- User info -->
@@ -18,6 +18,11 @@
       @sort-change="
         (value) => {
           sortByToggle = value;
+        }
+      "
+      @category-change="
+        (value) => {
+          category = value;
         }
       "
       @race-breakdown-change="
@@ -28,13 +33,16 @@
     />
 
     <!-- Heatmap viz -->
-    <DataViz
-      v-if="data[category] !== null"
-      :data="data[category]"
-      :censusData="censusData"
-      :raceBreakdownToggle="raceBreakdownToggle"
-      :sortByToggle="sortByToggle"
-    />
+    <transition name="fade">
+      <DataViz
+        v-show="data[category] !== null"
+        :data="data[category]"
+        :censusData="censusData"
+        :raceBreakdownToggle="raceBreakdownToggle"
+        :sortByToggle="sortByToggle"
+        :key="`${category}-data-viz`"
+      />
+    </transition>
   </div>
 </template>
 
@@ -57,12 +65,8 @@ export default {
       censusData: null,
       sortByToggle: "Number of Employees",
       raceBreakdownToggle: "All Races/Ethnicities",
+      category: "all",
     };
-  },
-  computed: {
-    category() {
-      return this.$route.params.category;
-    },
   },
   async created() {
     // Either "all", "executive", "new", "new_executive"
@@ -87,13 +91,21 @@ export default {
   },
   watch: {
     // eslint-disable-next-line
-    async $route(to, from) {
+    async category(value) {
       // Load the new data if we need to
-      let category = to.params.category;
-      if (this.data[category] === null)
-        this.data[category] = await fetch(category);
+      if (this.data[value] === null) this.data[value] = await fetch(value);
     },
   },
 };
 </script>
 
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

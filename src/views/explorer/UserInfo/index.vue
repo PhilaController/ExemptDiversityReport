@@ -3,6 +3,7 @@
     <DataVizGuide />
     <UserControls
       class="mt-5"
+      @category-change="(value) => $emit('category-change', value)"
       @sort-change="(value) => $emit('sort-change', value)"
       @race-breakdown-change="(value) => $emit('race-breakdown-change', value)"
     />

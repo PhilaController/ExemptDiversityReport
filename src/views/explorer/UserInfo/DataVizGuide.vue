@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     width() {
-      return Math.min(0.9 * this.$vuetify.breakpoint.width, 400);
+      return this.$vuetify.breakpoint.xs ? "100%" : 375;
     },
     data() {
       return [
@@ -142,5 +142,4 @@ export default {
   },
 };
 </script>
-
 

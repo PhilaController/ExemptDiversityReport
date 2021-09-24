@@ -19,26 +19,30 @@ export default {
   name: "Category",
   data() {
     return {
-      selectedCategory: null,
+      selectedCategory: "all",
     };
-  },
-  created() {
-    this.selectedCategory = this.$route.params.category;
   },
   computed: {
     options() {
-      let label;
-      if (this.$vuetify.breakpoint.xs) label = "\u2265" + "$90K";
-      else label = "Salaries At Least $90K";
+      // Determine executive labels
+      let new_executive, executive;
+      if (this.$vuetify.breakpoint.xs) {
+        executive = "Executive Exempt Employees";
+        new_executive = "New Executive Exempt Hires";
+      } else {
+        executive = "Exempt Employees, Salaries at Least $90K";
+        new_executive = "New Exempt Hires, Salaries at Least $90K";
+      }
+
       return [
         { text: "All Exempt Employees", value: "all" },
         {
-          text: "Exempt Employees, " + label,
+          text: executive,
           value: "executive",
         },
-        { text: "Newly Hired Exempts", value: "new" },
+        { text: "New Exempt Hires", value: "new" },
         {
-          text: "Newly Hired Exempts, " + label,
+          text: new_executive,
           value: "new_executive",
         },
       ];
@@ -46,7 +50,7 @@ export default {
   },
   methods: {
     handleChange(value) {
-      this.$router.push(value);
+      this.$emit("change", value);
     },
   },
 };
@@ -55,6 +59,7 @@ export default {
 <style>
 .v-list-item__title {
   font-size: 1rem !important;
+  line-height: 1.5rem !important;
 }
 #category-select {
   background-color: transparent !important;
