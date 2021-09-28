@@ -1,5 +1,5 @@
 <template>
-  <div id="diversity-report-app">
+  <div id="diversity-report-app" data-vuetify>
     <v-app>
       <v-main>
         <v-tabs
@@ -40,5 +40,16 @@ export default {
 }
 #diversity-report-app {
   overflow-x: hidden !important;
+}
+
+h2,
+h3 {
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.aligncenter {
+  margin: 2em auto !important;
+  padding: 6px !important;
 }
 </style>

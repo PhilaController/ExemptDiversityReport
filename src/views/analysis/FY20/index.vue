@@ -1,10 +1,19 @@
 <template>
-  <div></div>
+  <div id="analysis">
+    <Intro />
+    <KeyFindings />
+    <DetailedAnalysis />
+    <Footnotes />
+  </div>
 </template>
 
 <script>
-export default {};
-</script>
+import Intro from "./1-Intro";
+import KeyFindings from "./2-KeyFindings";
+import DetailedAnalysis from "./3-DetailedAnalysis";
+import Footnotes from "./4-Footnotes";
 
-<style>
-</style>
+export default {
+  components: { Intro, KeyFindings, DetailedAnalysis, Footnotes },
+};
+</script>
