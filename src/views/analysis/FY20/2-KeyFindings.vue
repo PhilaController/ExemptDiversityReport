@@ -31,7 +31,7 @@
           </li>
           <li>
             White employees accounted for 60% (24 of 40) of new executive hires
-            in FY20.
+            in FY20, compared to 40% in FY19 and 56% in FY18.
           </li>
           <li>
             Notably, there were no new Hispanic hires for executive positions in

@@ -115,9 +115,10 @@
         </sup>
         Nearly all departments responded that they follow the Hiring Guidelines,
         from the initial phone screening to the final interview process with a
-        diverse hiring panel. The only department that did not respond to these
-        questions was the First Judicial District, an independent office not
-        required to following the guidelines.
+        diverse hiring panel. The First Judicial District, which is an
+        independent office and is not required to following the guidelines, did
+        not directly respond to the questions but instead summarized their
+        hiring process and commitment to diversity.
       </p>
 
       <p>
@@ -196,14 +197,15 @@
         diverse representation meeting the Census threshold in FY19 but
         increased its share of diverse employees from 66.7% to 75.8%, including
         increasing its share of Asian employees by 9 percentage points. On the
-        other hand, Planning and Development slightly improved its diverse
-        representation compared to FY19 but remained one of the least diverse
-        departments in FY20 with only 36.0% diversity. Additionally, the exempt
-        workforce became less diverse in the Department of Public Health (-8.6
-        percentage points), the Water Department (-6.7 percentage points), the
-        Department of Public Property (-4.4 percentage points), and the Fire
-        department (-3.8 percentage points). Of the six new hires in the
-        Department of Public Health, five where White.
+        other hand, Planning and Development, which has 25 exempt employees,
+        slightly improved its diverse representation compared to FY19 but
+        remained one of the least diverse departments in FY20 with only 36.0%
+        diversity. Additionally, the exempt workforce became less diverse in the
+        Department of Public Health (-8.6 percentage points), the Water
+        Department (-6.7 percentage points), the Department of Public Property
+        (-4.4 percentage points), and the Fire department (-3.8 percentage
+        points). Of the six new hires in the Department of Public Health, five
+        where White.
       </p>
     </div>
   </div>

@@ -35,9 +35,10 @@
       under the Mayor’s authority and for independently elected offices. In
       FY20, departments in the Mayoral administration employed 1,706 exempt
       workers, with about 33% earning at least $90,000 annually. There were
-      3,145 exempt employees in independent offices, concentrated primarily in
-      the First Judicial District (2,318 employees) and the District Attorney’s
-      Office (527 employees).
+      3,145 exempt employees in independent offices with only 6.5% earning at
+      least $90,000. Among independent offices, the First Judicial District
+      (2,318 employees) and the District Attorney’s Office (527 employees) had
+      the two largest exempt workforces.
     </p>
 
     <!-- Link -->
