@@ -10,8 +10,6 @@ reviews are available on the City Controller's website:
 
 ![Interactive Dashboard Part 1](public/report-screenshot-1.png)
 ![Interactive Dashboard Part 2](public/report-screenshot-2.png)
-![Interactive Dashboard Part 3](public/report-screenshot-3.png)
-![Interactive Dashboard Part 4](public/report-screenshot-4.png)
 
 ## Tools
 
