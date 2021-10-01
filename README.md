@@ -25,11 +25,15 @@ yarn install
 ```
 ### Compiles and hot-reloads for development
 
-```
-yarn run serve
-```
-### Compiles and minifies for production
+Serve for a specific fiscal year:
 
 ```
-yarn run build
+make serve fy=2020
+```
+
+### Compiles and minifies for production
+
+Build for a specific fiscal year:
+```
+make build fy=2020
 ```
