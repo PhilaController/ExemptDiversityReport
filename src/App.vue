@@ -44,7 +44,7 @@ export default {
 
 h2,
 h3 {
-  margin-top: 0 !important;
+  margin-top: 2rem !important;
   margin-bottom: 1rem !important;
 }
 

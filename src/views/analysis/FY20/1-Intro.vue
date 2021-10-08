@@ -18,27 +18,21 @@
         ><a href="#fn1" id="ref1">[1]</a></sup
       >
       The data for this year’s review was compiled from the City’s OnePhilly
-      payroll system and was reconciled against department-provided demographic
-      data before finalizing. Similar to previous reports, exempt employees are
-      shown in relation to the department from which they are paid.
+      payroll system, and departments were asked to verify its accuracy before
+      finalizing. Similar to previous reports, exempt employees are shown in
+      relation to the department from which they are paid.
     </p>
-
     <p>
       To evaluate the City's progress toward its diversity goals and the
       diversity of its leadership, the data is broken out into four important
       categories: all exempt employees, new exempt hires in FY20,<sup
-        ><a class="footnote" href="#fn2" id="ref2">[2]</a>
+        ><a href="#fn2" id="ref2">[2]</a>
       </sup>
       exempt employees with salaries of at least $90,000 (referred to as
       “executive” positions) and the subset of new hires with salaries of at
-      least $90,000. Data is examined separately for City departments that fall
-      under the Mayor’s authority and for independently elected offices. In
-      FY20, departments in the Mayoral administration employed 1,706 exempt
-      workers, with about 33% earning at least $90,000 annually. There were
-      3,145 exempt employees in independent offices with only 6.5% earning at
-      least $90,000. Among independent offices, the First Judicial District
-      (2,318 employees) and the District Attorney’s Office (527 employees) had
-      the two largest exempt workforces.
+      least $90,000. The diversity of the City’s exempt workforce is examined
+      separately for City departments that fall under the Mayor’s authority and
+      for independently elected offices.
     </p>
 
     <!-- Link -->

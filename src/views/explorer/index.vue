@@ -2,15 +2,24 @@
   <div class="section" id="explorer">
     <p>
       In the following visualizations, the diversity data for each City
-      department or elected office is presented in two separate heatmaps, one
-      for all departments that fall under the Mayor's authority
+      department or independent office is presented in two separate heatmaps,
+      one for all departments that fall under the Mayor's authority
       <span v-if="!$vuetify.breakpoint.mobile">(left)</span> and one for
       independently elected offices<span v-if="!$vuetify.breakpoint.mobile">
         (right)</span
-      >. Using the buttons below, data can be broken out into four categories:
-      all exempt employees, exempt employees hired in {{ reportTag }}, exempt
-      employees with salaries of at least $90,000 ("executive" positions), and
-      the subset of new hires with salaries of at least $90,000.
+      >. Rows of the heatmap show results for a specific department while
+      columns represent different races and ethnicities. The data is visualized
+      relative to Philadelphia's overall population statistics according to the
+      latest Census data. The color gray indicates that a particular race or
+      ethnicity is represented at the same level as the city's Census, while the
+      colors red and blue indicate overrepresentation and underrepresentation,
+      respectively.
+    </p>
+    <p>
+      Data can be broken out into four categories: all exempt employees, exempt
+      employees hired in {{ reportTag }}, exempt employees with salaries of at
+      least $90,000, and the subset of new hires with salaries of at least
+      $90,000.
     </p>
 
     <!-- User info -->

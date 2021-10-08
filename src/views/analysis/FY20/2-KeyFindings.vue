@@ -51,9 +51,9 @@
             and 40.3% in FY18).
           </li>
           <li>
-            In the District Attorney’s Office, only 35.7% of the exempt
-            workforce was diverse in FY20, an underrepresentation compared to
-            the city’s overall population, but an improvement from FY19 (31.2%)
+            In the District Attorney’s Office, 35.7% of the exempt workforce was
+            diverse in FY20, an underrepresentation compared to the city’s
+            overall population, but a substantial improvement from FY19 (31.2%)
             and FY18 (28.6%).
           </li>
         </ul>
@@ -66,5 +66,3 @@
 export default { name: "KeyFindings" };
 </script>
 
-<style>
-</style>

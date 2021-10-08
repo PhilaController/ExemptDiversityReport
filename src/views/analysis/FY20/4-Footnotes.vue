@@ -51,20 +51,15 @@
         <a href="#ref4" id="fn4">[4]</a>
       </span>
       <span class="ml-1"
-        >See the “Exempt Hiring Guide for Building a Talented, Diverse
-        Workforce.”</span
-      >
-    </p>
-    <p>
-      <span>
-        <a href="#ref5" id="fn5">[5]</a>
-      </span>
-      <span class="ml-1">
-        Note that a number of new exempt employees are hired by the Law
-        Department but paid through other departments. For example, the Law
-        Department was responsible for paying for 23 new exempt hires in FY19
-        (30% diverse), but the department hired 39 exempt employees, of which
-        41% were diverse.
+        >See the
+        <a
+          href="https://controller.phila.gov/wp-content/uploads/2021/10/Exempt-Hiring-Playbook.pdf"
+          target="_blank"
+          ><span
+            >“Exempt Hiring Guide for Building a Talented, Diverse
+            Workforce.”</span
+          ><i class="ml-1 fas fa-external-link-alt"></i
+        ></a>
       </span>
     </p>
   </div>

@@ -1,88 +1,110 @@
 <template>
   <!-- Main Changes -->
   <div class="section" id="detailed-analysis">
-    <h2>Detailed Analysis</h2>
+    <h2>Diversity of the Exempt Workforce</h2>
     <hr class="titlebar" />
 
-    <!-- Overall Representation -->
-    <div class="subsection" id="overall-workforce">
-      <h3>Overall Representation</h3>
+    <p>
+      In FY20, the City’s exempt workforce, totaling 4,851 employees, was 45.8%
+      diverse, an increase of less than one percentage point over the previous
+      fiscal year. As seen in the figure below, White employees were
+      overrepresented and accounted for 54.2% of the total workforce, well above
+      the 34.3% share of Philadelphia’s population according to 2020 Census
+      data.<sup>
+        <a class="footnote" href="#fn3" id="ref3">[3]</a>
+      </sup>
+      Diverse representation decreases when focusing only on exempt positions
+      with salaries of at least $90,000. For these executive positions, White
+      employees accounted for 59.8% of the total, an increase of about one
+      percentage point from FY19 to FY20.
+    </p>
+
+    <!-- Figure 1 -->
+    <img
+      alt="Demographics of City Departments since FY18: All Exempts and Exempts Earning More than $90,000"
+      src="https://controller.phila.gov/wp-content/uploads/2021/10/all_depts_yoy_all_executive.png"
+      width="700"
+      class="aligncenter mt-5 mb-5"
+      sizes="(max-width: 700px) 100vw, 700px"
+      loading="lazy"
+    />
+
+    <div class="subsection" id="mayoral-admin">
+      <h3>The Mayoral Administration</h3>
 
       <p>
-        In FY20, the City’s exempt workforce, totaling 4,851 employees, was
-        45.8% diverse. The diversity of the workforce increased by less than one
-        percentage point over the previous fiscal year and remained far below
-        the 65.7% diverse share of Philadelphia’s population according to 2020
-        Census data.<sup>
-          <a class="footnote" href="#fn3" id="ref3">[3]</a>
+        In 2017, Mayor Kenney’s administration created the Exempt Employee
+        Hiring Guidelines<sup>
+          <a href="#fn4" id="ref4">[4]</a>
         </sup>
-        Representation among diverse employees in the exempt workforce remained
-        lowest for Hispanic and Asian groups, with Hispanic individuals making
-        up 14.9% of the city’s population but only 6.1% of the City’s exempt
-        workforce, and Asian individuals making up 8.3% of the city’s population
-        but only 4.3% of the total exempt workforce. African Americans were also
-        underrepresented in FY20, making up 38.3% of the population but 33.5% of
-        the exempt workforce. White employees, however, were overrepresented in
-        the exempt workforce relative to Philadelphia’s overall population.
+        in an effort to increase diverse representation in the City’s exempt
+        workforce. While the guidelines are not mandatory, Mayoral departments
+        are expected to follow the recommendations for all exempt hires when
+        possible. This section focuses only on the diversity of the workforce in
+        these Mayoral departments, which included 1,706 exempt employees in
+        FY20, and excludes exempt employees in independent offices.
       </p>
 
       <p>
-        Similar to the overall exempt workforce, White employees in departments
-        under the Mayor’s authority were also overrepresented, accounting for
-        46.4% of the workforce. This represents a modest improvement from prior
-        years, 47.2% in FY19 and 48.2% in FY18. The figure on the following page
-        summarizes the changes in diversity for departments in the Mayoral
-        administration. Since FY18, Asian representation has had the largest
-        improvement, increasing from 5.2% in FY18 to 7.1% in FY20. Hispanic
-        representation has remained unchanged, and this group continues to be
-        the most underrepresented minority in the Mayoral administration.
-        Hispanic employees made up only 7.3% of the administration’s workforce
-        in FY20, compared to 14.9% of the city’s overall population.
+        Similar to the citywide exempt workforce, White employees in Mayoral
+        departments were overrepresented in FY20, accounting for 46.4% of the
+        workforce. This represents a modest improvement from prior years, 47.2%
+        in FY19 and 48.2% in FY18. Representation among diverse employees
+        remained lowest for Hispanic and Asian groups, with Hispanic individuals
+        making up 14.9% of the city’s population but only 7.4% of the Mayoral
+        exempt workforce, and Asian individuals making up 8.3% of the city’s
+        population but only 7.1% of the workforce.
       </p>
 
       <p>
-        The right panel of the following figure highlights that the exempt
-        workforce in Mayoral departments becomes substantially less diverse when
-        considering exempt employees earning at least $90,000 — White employees
-        made up 56.0% of these positions in FY20. The diversity of this group
-        fell slightly from last year, decreasing from 44.6% to 44.0% diverse in
-        FY20; however, this representation is an improvement compared to 41.6%
-        in FY18. As in the overall workforce, Hispanic representation is lowest,
-        with only 4.7% of exempt employees in this group, well below the city’s
-        14.9% level.
+        The figure on the following page summarizes the changes in diversity for
+        departments in the Mayoral administration. Since FY18, Asian
+        representation has had the largest improvement, increasing from 5.2% in
+        FY18 to 7.1% in FY20. On the other hand, Black/African American
+        representation has declined while Hispanic representation has remained
+        nearly unchanged since FY18. Hispanic employees continue to be the most
+        underrepresented group in the exempt workforce, both for Mayoral
+        departments and independent offices.
       </p>
 
-      <!-- Figure 1 -->
+      <p>
+        The right panel of the figure highlights that the exempt workforce in
+        Mayoral departments becomes substantially less diverse when considering
+        exempt employees earning at least $90,000 — White employees made up
+        56.2% of these positions in FY20. The diversity of this group fell
+        slightly from last year, decreasing from 44.6% to 43.8% diverse in FY20;
+        however, this representation is an improvement compared to 41.6% in
+        FY18. As with the overall workforce, Hispanic representation is lowest
+        among employees earning more than $90,000, accounting for only 4.8% of
+        exempt employees in this group.
+      </p>
+
+      <!-- Figure 2 -->
       <img
         alt="Demographics of Departments in the Mayoral Administration since FY18: All Exempts and Exempts Earning More than $90,000"
-        src="https://controller.phila.gov/wp-content/uploads/2021/09/mayoral_depts_yoy_all_executive.png"
+        src="https://controller.phila.gov/wp-content/uploads/2021/10/mayoral_depts_yoy_all_executive.png"
         width="700"
         class="aligncenter mt-5 mb-5"
         sizes="(max-width: 700px) 100vw, 700px"
         loading="lazy"
       />
-    </div>
-
-    <!-- New Hires -->
-    <div class="subsection" id="new-hires">
-      <h3>New Hires</h3>
 
       <p>
-        In the Mayoral administration, White employees were also overrepresented
-        among new hires in FY20 with 41.7% of new hires identifying as White, a
-        slight decrease from FY19. The overall diversity of new hires improved
-        slightly, from 56.8% in FY19 to 58.3% in FY20. This improvement was
-        driven by Asian representation among new hires, which increased from
-        9.2% in FY19 to 14.2% in FY20. Black or African American representation
-        stayed at about the same level in FY20 as FY19 at 32.5%, though this
-        reflects a decline from 38.2% in FY18. Hispanic representation in new
-        hires also declined, from 10.0% in FY19 to 8.3% in FY20.
+        When focusing on new exempt hires in FY20, White employees were also
+        overrepresented, accounting for 41.7% of hires. The percent of diverse
+        new hires increased from 56.8% in FY19 to 58.3% in FY20, a small
+        year-over-year increase in diversity. This improvement was driven by
+        Asian representation among new hires, which increased from 9.2% in FY19
+        to 14.2% in FY20. Black or African American representation stayed at
+        about the same level in FY20 as FY19 at 32.5%, though this reflects a
+        decline from 38.2% in FY18. Hispanic representation in new hires also
+        declined, from 10.0% in FY19 to 8.3% in FY20.
       </p>
 
       <p>
         New exempt hires for executive positions were significantly less diverse
         in FY20 compared to FY19, with White employees accounting for 60.0% of
-        executive new hires. The only notable improvement in diversity among new
+        new executive hires. The only notable improvement in diversity among new
         executive hires was a substantial increase in Asian representation,
         having more than doubled from 8.5% in FY19 to 20.0% in FY20.
         Representation across other diverse groups for these positions took a
@@ -91,92 +113,95 @@
         to only 20.0% in FY20.
       </p>
 
-      <!-- Figure 2 -->
+      <!-- Figure 3 -->
       <img
         alt="Demographics of Departments in the Mayoral Administration Since FY18: Exempt Hires and Exempt Hires Earning More than $90,000"
-        src="https://controller.phila.gov/wp-content/uploads/2021/09/mayoral_depts_yoy_new_new_executive.png"
+        src="https://controller.phila.gov/wp-content/uploads/2021/10/mayoral_depts_yoy_new_new_executive.png"
         width="700"
         class="aligncenter mt-5 mb-5"
         sizes="(max-width: 700px) 100vw, 700px"
         loading="lazy"
       />
+
       <p>
         To better examine diversity trends for new hires, the City Controller’s
         Office requested additional information from eight departments with
         particularly low diverse representation among new hires in FY20. These
-        departments were the First Judicial District, the District Attorney’s
-        Office, the Managing Director’s Office (MDO), the Law Department, the
-        Department of Public Health, Parks and Recreation, Commerce, and the
-        Office of Innovation and Technology (OIT). For each new hire in these
-        departments, the Controller’s Office asked a series of questions about
-        the hiring process and adherence to the Exempt Employee Hiring
-        Guidelines.<sup>
-          <a class="footnote" href="#fn4" id="ref4">[4]</a>
-        </sup>
-        Nearly all departments responded that they follow the Hiring Guidelines,
-        from the initial phone screening to the final interview process with a
-        diverse hiring panel. The First Judicial District, which is an
-        independent office and is not required to following the guidelines, did
-        not directly respond to the questions but instead summarized their
-        hiring process and commitment to diversity.
+        departments were the First Judicial District (FJD), the District
+        Attorney’s Office (DAO), the Managing Director’s Office (MDO), the Law
+        Department, the Department of Public Health, Parks and Recreation,
+        Commerce, and the Office of Innovation and Technology (OIT). For each
+        new hire in these departments, the Controller’s Office asked a series of
+        questions about the hiring process and adherence to the Exempt Employee
+        Hiring Guidelines. Except for the FJD, each of these departments
+        responded that they followed the Hiring Guidelines for new exempt hires
+        in FY20. The FJD, which is an independent office and is not subject to
+        the recommended policies in the guidelines, instead outlined their
+        diversity initiatives, which include a recently hired Diversity, Equity,
+        and Inclusion Chief and the creation of a unit to focus specifically on
+        maintaining fair and diverse hiring practices.
       </p>
-
       <p>
-        Nearly all the departments that responded to questions had majority
-        White (50% or more) new hires in FY20. The exceptions were OIT and MDO,
-        which had 62.7% and 51.7% diverse representation among new hires,
-        respectively. Collectively, the eight departments hired 398 exempt
-        employees in FY20, with White employees accounting for 52.3% of the
-        total. This lack of diversity raises clear questions regarding the
-        effectiveness of the Hiring Guidelines in attracting diverse candidates
-        and increasing diverse representation in the City’s workforce.
+        Collectively, these eight departments hired 398 exempt employees in
+        FY20, comprising 71% of all new exempt hires. White employees accounted
+        for 52.3% of the total and were substantially overrepresented relative
+        to the city population, which is only 34.3% White. Despite this lack of
+        diversity in new hires, the departments stated that they followed the
+        recommended hiring policies from the Exempt Hiring Guidelines. This
+        warrants a more detailed examination of the hiring process for exempt
+        employees. This examination should seek to identify the root causes
+        leading to the continued lack of diversity among new exempt hires and
+        result in the implementation of necessary changes to ensure the City can
+        attract and hire diverse candidates for its exempt workforce.
       </p>
     </div>
 
-    <!-- Other Notable Changes -->
+    <!-- Largest Departments-->
     <div class="subsection" id="largest-departments">
-      <h3>Diversity in the Largest Exempt Departments</h3>
+      <h3>Departments with the Largest Exempt Workforces</h3>
 
       <p>
         About 80% of the City’s exempt employees were concentrated in just six
         City departments in FY20. Three of these departments fall under the
-        Mayor’s authority: the Managing Director’s Office (MDO), the Office of
-        Innovation and Technology (OIT), and the Law Department. The remaining
-        three are independently elected offices: the First Judicial District,
-        the District Attorney, and City Council. As seen in the figure below,
-        diverse individuals were underrepresented in each of these department
-        workforces in FY20.
+        Mayor’s authority: MDO, OIT, and the Law Department. The remaining three
+        are independently elected offices: the FJD, DAO, and City Council. As
+        seen in the figure below, diverse individuals were underrepresented in
+        each of these department workforces in FY20.
       </p>
       <p>
-        Diverse representation in the District Attorney’s Office has improved
-        each year since FY18, increasing from 28.6% in FY18 to 35.7% in FY20.
-        Diverse representation in the First Judicial District (40.9%) remained
-        essentially unchanged year over year, having decreased by only one-tenth
-        of a percentage point. Of the largest departments, the Law Department is
-        the least diverse, with diverse employees accounting for only 34.6% of
-        the department’s workforce. The overall increase in Asian representation
-        in the City’s workforce was driven primarily by new hires in OIT, with
-        15 of 59 (25.4%) new hires identifying as Asian. OIT has the largest
-        share of diverse employees among the six largest exempt workforces at
-        57.8%. City Council has the second highest share of diverse employees at
-        56.8% in FY20, a slight decrease from 57.5% in FY19.
+        Diverse representation in the DAO has improved each year since FY18,
+        increasing from 28.6% in FY18 to 35.7% in FY20. Following the
+        implementation of a number of steps intended to improve diversity,
+        diverse representation among new hires in the DAO has improved
+        substantially, increasing from just 34.0% in FY18 to 49.6% in FY20.
+        Diverse representation in the FJD (40.9%) remained essentially unchanged
+        year over year, having decreased by only one-tenth of a percentage
+        point. Of the six largest departments considered here, the Law
+        Department is the least diverse, with diverse employees accounting for
+        only 34.6% of the department’s workforce. The overall increase in Asian
+        representation in the City’s workforce was driven primarily by new hires
+        in OIT, with 15 of 59 (25.4%) new hires identifying as Asian. OIT has
+        the largest share of diverse employees among the six largest exempt
+        workforces at 57.8%. City Council has the second highest share of
+        diverse employees at 56.8% in FY20, a slight decrease from 57.5% in
+        FY19.
       </p>
 
       <p>
-        Of the six largest exempt workforces, only the First Judicial District
-        saw an increase in the share of diverse employees making more than
-        $90,000. The increase was quite small, increasing by only one percentage
-        point from FY19 to FY20. City Council had the largest decrease in
-        representation among workers making more than $90,000 at -8.7 percentage
-        points, followed by the MDO (-4.9 percentage points), OIT (-2.1
-        percentage points), Law (-0.7 percentage points), and the District
-        Attorney’s Office (-0.5 percentage points).
+        Of the six largest exempt workforces, only the FJD saw an increase in
+        the share of diverse employees making at least $90,000. The increase was
+        quite small, increasing by only one percentage point from FY19 to FY20.
+        City Council had the largest decrease in representation among workers
+        making at least $90,000 at -8.7 percentage points, followed by the MDO
+        (-4.9 percentage points), OIT (-2.1 percentage points), Law (-0.7
+        percentage points), and the District Attorney’s Office (-0.5 percentage
+        points).
       </p>
 
-      <!-- Figure 3 -->
+      <!-- Figure 4 -->
       <img
         alt="Diverse Representation in City Departments with the Largest Exempt Workforces Since FY18"
-        src="https://controller.phila.gov/wp-content/uploads/2021/09/Diversity-of-Depts.png"
+        src="https://controller.phila.gov/wp-content/uploads/2021/10/Diversity-of-Depts.png"
         width="700"
         class="aligncenter mt-5 mb-5"
         sizes="(max-width: 700px) 100vw, 700px"
@@ -215,5 +240,3 @@
 export default { name: "DetailedAnalysis" };
 </script>
 
-<style>
-</style>
