@@ -32,7 +32,7 @@
       “executive” positions) and the subset of new hires with salaries of at
       least $90,000. The diversity of the City’s exempt workforce is examined
       separately for City departments that fall under the Mayor’s authority and
-      for independently elected offices.
+      for independent offices.
     </p>
 
     <!-- Link -->

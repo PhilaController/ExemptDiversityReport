@@ -164,9 +164,9 @@
         About 80% of the City’s exempt employees were concentrated in just six
         City departments in FY20. Three of these departments fall under the
         Mayor’s authority: MDO, OIT, and the Law Department. The remaining three
-        are independently elected offices: the FJD, DAO, and City Council. As
-        seen in the figure below, diverse individuals were underrepresented in
-        each of these department workforces in FY20.
+        are independent offices: the FJD, DAO, and City Council. As seen in the
+        figure below, diverse individuals were underrepresented in each of these
+        department workforces in FY20.
       </p>
       <p>
         Diverse representation in the DAO has improved each year since FY18,

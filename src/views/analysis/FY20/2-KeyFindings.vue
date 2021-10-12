@@ -41,9 +41,9 @@
       </li>
       <!-- Finding #3 -->
       <li>
-        Diverse employees were also underrepresented in the elected offices with
-        the two largest exempt workforces, the First Judicial District and the
-        District Attorney's Office.
+        Diverse employees were also underrepresented in the independent offices
+        with the two largest exempt workforces, the First Judicial District and
+        the District Attorney's Office.
         <ul>
           <li>
             In the First Judicial District, the exempt workforce was 40.9%
