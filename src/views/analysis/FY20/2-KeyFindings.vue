@@ -8,7 +8,7 @@
       <li>
         In FY20, diverse employees accounted for 45.8% of the exempt workforce
         and remain underrepresented relative to the city’s overall population,
-        which is 65.6% diverse.
+        which is 65.7% diverse.
       </li>
       <!-- Finding #2 -->
       <li>
@@ -26,7 +26,7 @@
           <li>
             Exempt workers in executive positions (earning at least $90,000) are
             less diverse than the overall workforce. Diverse representation in
-            these positions decreased slightly from 44.6% in FY19 to 44.0% in
+            these positions decreased slightly from 44.6% in FY19 to 43.8% in
             FY20.
           </li>
           <li>

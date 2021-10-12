@@ -5,7 +5,7 @@
     <hr class="titlebar" />
 
     <p>
-      In FY20, the City’s exempt workforce, totaling 4,851 employees, was 45.8%
+      In FY20, the City’s exempt workforce, totaling 4,832 employees, was 45.8%
       diverse, an increase of less than one percentage point over the previous
       fiscal year. As seen in the figure below, White employees were
       overrepresented and accounted for 54.2% of the total workforce, well above
@@ -15,8 +15,8 @@
       </sup>
       Diverse representation decreases when focusing only on exempt positions
       with salaries of at least $90,000. For these executive positions, White
-      employees accounted for 59.8% of the total, an increase of about one
-      percentage point from FY19 to FY20.
+      employees accounted for 59.8% of the total, an increase of one percentage
+      point from FY19 to FY20.
     </p>
 
     <!-- Figure 1 -->
@@ -41,7 +41,7 @@
         workforce. While the guidelines are not mandatory, Mayoral departments
         are expected to follow the recommendations for all exempt hires when
         possible. This section focuses only on the diversity of the workforce in
-        these Mayoral departments, which included 1,706 exempt employees in
+        these Mayoral departments, which included 1,687 exempt employees in
         FY20, and excludes exempt employees in independent offices.
       </p>
 
@@ -60,11 +60,11 @@
         The figure on the following page summarizes the changes in diversity for
         departments in the Mayoral administration. Since FY18, Asian
         representation has had the largest improvement, increasing from 5.2% in
-        FY18 to 7.1% in FY20. On the other hand, Black/African American
-        representation has declined while Hispanic representation has remained
-        nearly unchanged since FY18. Hispanic employees continue to be the most
-        underrepresented group in the exempt workforce, both for Mayoral
-        departments and independent offices.
+        FY18 to 7.1% in FY20. On the other hand, African American representation
+        has declined while Hispanic representation has remained nearly unchanged
+        since FY18. Hispanic employees continue to be the most underrepresented
+        group in the exempt workforce, both for Mayoral departments and
+        independent offices.
       </p>
 
       <p>
@@ -75,7 +75,7 @@
         slightly from last year, decreasing from 44.6% to 43.8% diverse in FY20;
         however, this representation is an improvement compared to 41.6% in
         FY18. As with the overall workforce, Hispanic representation is lowest
-        among employees earning more than $90,000, accounting for only 4.8% of
+        among employees earning at least $90,000, accounting for only 4.8% of
         exempt employees in this group.
       </p>
 
@@ -95,10 +95,10 @@
         new hires increased from 56.8% in FY19 to 58.3% in FY20, a small
         year-over-year increase in diversity. This improvement was driven by
         Asian representation among new hires, which increased from 9.2% in FY19
-        to 14.2% in FY20. Black or African American representation stayed at
-        about the same level in FY20 as FY19 at 32.5%, though this reflects a
-        decline from 38.2% in FY18. Hispanic representation in new hires also
-        declined, from 10.0% in FY19 to 8.3% in FY20.
+        to 14.2% in FY20. African American representation stayed at about the
+        same level in FY20 as FY19 at 32.5%, though this reflects a decline from
+        38.2% in FY18. Hispanic representation in new hires also declined, from
+        10.0% in FY19 to 8.3% in FY20.
       </p>
 
       <p>
@@ -109,8 +109,8 @@
         having more than doubled from 8.5% in FY19 to 20.0% in FY20.
         Representation across other diverse groups for these positions took a
         disappointing turn in FY20, with no new Hispanic executive hires, and
-        with Black or African American representation falling from 46.8% in FY19
-        to only 20.0% in FY20.
+        with African American representation falling from 46.8% in FY19 to only
+        20.0% in FY20.
       </p>
 
       <!-- Figure 3 -->
@@ -173,7 +173,7 @@
         increasing from 28.6% in FY18 to 35.7% in FY20. Following the
         implementation of a number of steps intended to improve diversity,
         diverse representation among new hires in the DAO has improved
-        substantially, increasing from just 34.0% in FY18 to 49.6% in FY20.
+        substantially, increasing from just 34.0% in FY18 to 49.1% in FY20.
         Diverse representation in the FJD (40.9%) remained essentially unchanged
         year over year, having decreased by only one-tenth of a percentage
         point. Of the six largest departments considered here, the Law
@@ -220,8 +220,7 @@
         from 56.5% in FY19 to 67.3% in FY20, meeting the Census threshold for
         diverse representation. The Department of Homeless Services already had
         diverse representation meeting the Census threshold in FY19 but
-        increased its share of diverse employees from 66.7% to 75.8%, including
-        increasing its share of Asian employees by 9 percentage points. On the
+        increased its share of diverse employees from 66.7% to 75.8%. On the
         other hand, Planning and Development, which has 25 exempt employees,
         slightly improved its diverse representation compared to FY19 but
         remained one of the least diverse departments in FY20 with only 36.0%
@@ -230,7 +229,7 @@
         Department (-6.7 percentage points), the Department of Public Property
         (-4.4 percentage points), and the Fire department (-3.8 percentage
         points). Of the six new hires in the Department of Public Health, five
-        where White.
+        were White.
       </p>
     </div>
   </div>
