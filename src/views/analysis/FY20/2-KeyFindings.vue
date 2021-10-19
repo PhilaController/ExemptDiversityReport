@@ -24,6 +24,12 @@
             exempt hires in FY20, compared to 9.2% in FY19 and 9.4% in FY18.
           </li>
           <li>
+            Since FY18, Asian representation has had the largest improvement,
+            increasing from 5.2% in FY18 to 7.1% in FY20. On the other hand,
+            African American representation has declined while Hispanic
+            representation has remained nearly unchanged since FY18.
+          </li>
+          <li>
             Exempt workers in executive positions (earning at least $90,000) are
             less diverse than the overall workforce. Diverse representation in
             these positions decreased slightly from 44.6% in FY19 to 43.8% in

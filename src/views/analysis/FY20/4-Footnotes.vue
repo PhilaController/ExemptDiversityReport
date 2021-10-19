@@ -23,8 +23,18 @@
       </span>
     </p>
     <p>
+      <span><a href="#ref2" id="fn2">[2]</a></span>
+      <span class="ml-1"
+        >Note that the department that hires an employee is not necessarily
+        responsible for paying that employee. As hiring information has been
+        unavailable in past years, employees are associated with the department
+        that pays them to allow for year-over-year comparisons and ensure
+        accurate data quality.</span
+      >
+    </p>
+    <p>
       <span>
-        <a href="#ref2" id="fn2">[2]</a>
+        <a href="#ref3" id="fn3">[3]</a>
       </span>
       <span class="ml-1">
         Data for new exempt hires includes employees new to the City of
@@ -34,7 +44,7 @@
     </p>
     <p>
       <span>
-        <a href="#ref3" id="fn3">[3]</a>
+        <a href="#ref4" id="fn4">[4]</a>
       </span>
       <span class="ml-1">
         Source:
@@ -48,7 +58,7 @@
     </p>
     <p>
       <span>
-        <a href="#ref4" id="fn4">[4]</a>
+        <a href="#ref5" id="fn5">[5]</a>
       </span>
       <span class="ml-1"
         >See the
@@ -60,6 +70,16 @@
             Workforce.”</span
           ><i class="ml-1 fas fa-external-link-alt"></i
         ></a>
+      </span>
+    </p>
+    <p>
+      <span><a href="#ref6" id="fn6">[6]</a></span>
+      <span class="ml-1"
+        >Follow-up questions were directed to the department responsible for the
+        hiring process for new hires in FY20. This department is not necessarily
+        the same as the department that is responsible for paying the employee.
+        By using hiring department information, the Controller’s Office is able
+        to more closely examine the City’s hiring process for exempt employees.
       </span>
     </p>
   </div>

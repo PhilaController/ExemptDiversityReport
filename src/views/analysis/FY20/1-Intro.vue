@@ -9,7 +9,6 @@
       workforce includes employees at all job levels, including those in senior
       leadership positions, such as department and cabinet heads.
     </p>
-
     <p>
       This review examines the racial breakdown of Philadelphia's exempt
       workforce at the end of fiscal year 2020 (FY20). It builds on previous
@@ -20,13 +19,15 @@
       The data for this year’s review was compiled from the City’s OnePhilly
       payroll system, and departments were asked to verify its accuracy before
       finalizing. Similar to previous reports, exempt employees are shown in
-      relation to the department from which they are paid.
+      relation to the department from which they are paid.<sup
+        ><a href="#fn2" id="ref2">[2]</a></sup
+      >
     </p>
     <p>
       To evaluate the City's progress toward its diversity goals and the
       diversity of its leadership, the data is broken out into four important
       categories: all exempt employees, new exempt hires in FY20,<sup
-        ><a href="#fn2" id="ref2">[2]</a>
+        ><a href="#fn3" id="ref3">[3]</a>
       </sup>
       exempt employees with salaries of at least $90,000 (referred to as
       “executive” positions) and the subset of new hires with salaries of at

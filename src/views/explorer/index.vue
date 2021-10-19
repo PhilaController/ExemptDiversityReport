@@ -5,8 +5,7 @@
       department or independent office is presented in two separate heatmaps,
       one for all departments that fall under the Mayor's authority
       <span v-if="!$vuetify.breakpoint.mobile">(left)</span> and one for
-      independently elected offices<span v-if="!$vuetify.breakpoint.mobile">
-        (right)</span
+      independent offices<span v-if="!$vuetify.breakpoint.mobile"> (right)</span
       >. Rows of the heatmap show results for a specific department while
       columns represent different races and ethnicities. The data is visualized
       relative to Philadelphia's overall population statistics according to the
