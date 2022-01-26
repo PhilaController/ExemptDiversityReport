@@ -3,6 +3,7 @@
 The code behind the interactive review of the diversity of the City of Philadelphia's exempt workforce. The annual
 reviews are available on the City Controller's website:
 
+- [FY20](https://controller.phila.gov/philadelphia-audits/fy20-exempt-employee-diversity/)
 - [FY19](https://controller.phila.gov/philadelphia-audits/fy19-exempt-employee-diversity/)
 - [FY18](https://controller.phila.gov/philadelphia-audits/fy18-exempt-employee-diversity/)
 
