@@ -3,7 +3,7 @@
     <h2>Key Findings</h2>
     <hr class="titlebar" />
 
-    <ul aria-labelledby="key-takeaways">
+    <ul aria-labelledby="key-findings">
       <!-- Finding #1 -->
       <li>
         In FY19, diverse employees remained underrepresented in the exempt
