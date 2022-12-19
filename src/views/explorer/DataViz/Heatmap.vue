@@ -176,7 +176,7 @@ export default {
       gy.select(".domain").remove();
 
       // make Philadelphia Census and All Department bold
-      gy.selectAll("text").style("font-weight", function (d) {
+      gy.selectAll("text").style("font-weight", function(d) {
         let depts = ["Philadelphia Census", "All Departments"];
         let bold = depts.indexOf(vueComponent.rowOrder[d]) !== -1;
         return bold ? "bold" : "normal";
@@ -187,7 +187,7 @@ export default {
         .append("g")
         .attr("class", "heatmap-rects")
         .selectAll()
-        .data(this.filteredData, function (d) {
+        .data(this.filteredData, function(d) {
           return `${d.department} : ${d.race} : ${vueComponent.showAllRaces}`;
         })
         .enter();
@@ -195,10 +195,10 @@ export default {
       // add rectangles
       rects
         .append("rect")
-        .attr("x", function (d) {
+        .attr("x", function(d) {
           return scale.x(vueComponent.races.indexOf(d.race));
         })
-        .attr("y", function (d) {
+        .attr("y", function(d) {
           return scale.y(vueComponent.rowOrder.indexOf(d.department));
         })
         .attr("stroke", "#fff")
@@ -207,7 +207,7 @@ export default {
         .attr("department", (d) => d.department)
         .attr("race", (d) => d.race)
         .style("fill", (d) => vueComponent.getFillColor(d))
-        .style("stroke-width", function (d) {
+        .style("stroke-width", function(d) {
           return d.race !== "Total Number" ? 0.5 : 0;
         })
         .on("mouseover", this.mouseover)
@@ -221,16 +221,16 @@ export default {
         .attr("dominant-baseline", "central")
         .attr("font-size", this.yLabelSize)
         .attr("class", "total-number")
-        .attr("x", function (d) {
+        .attr("x", function(d) {
           return scale.x(vueComponent.races.indexOf(d.race));
         })
-        .attr("y", function (d) {
+        .attr("y", function(d) {
           return (
             scale.y(vueComponent.rowOrder.indexOf(d.department)) +
             0.5 * scale.y.bandwidth()
           );
         })
-        .text(function (d) {
+        .text(function(d) {
           return d.race === "Total Number" ? d3.format(",.0f")(+d.count) : "";
         })
         .attr("class", "total-number-text");
@@ -260,19 +260,19 @@ export default {
       if (sortBy === "white") {
         d = f
           .filter((el) => el.race === "White")
-          .sort(function (a, b) {
+          .sort(function(a, b) {
             return d3.descending(a.pct, b.pct);
           });
       } else if (sortBy === "department") {
         d = f
           .filter((el) => el.race === "White") // select only one column
-          .sort(function (a, b) {
+          .sort(function(a, b) {
             return d3.ascending(a.department, b.department);
           });
       } else if (sortBy === "employees") {
         d = f
           .filter((el) => el.race === "Total Number")
-          .sort(function (a, b) {
+          .sort(function(a, b) {
             return d3.descending(+a.count, +b.count);
           });
       }
@@ -392,17 +392,17 @@ export default {
       svg.selectAll(".total-number-text").remove();
       svg.selectAll(".svg-title").remove();
 
-      const rects = svg.selectAll("rect").data(this.filteredData, function (d) {
+      const rects = svg.selectAll("rect").data(this.filteredData, function(d) {
         return `${vueComponent.showAllRaces}_${d.department}_${d.race}`;
       });
 
       rects
         .enter()
         .append("rect")
-        .attr("x", function (d) {
+        .attr("x", function(d) {
           return scale.x(vueComponent.races.indexOf(d.race));
         })
-        .attr("y", function (d) {
+        .attr("y", function(d) {
           return scale.y(vueComponent.rowOrder.indexOf(d.department));
         })
         .attr("stroke", "#fff")
@@ -412,7 +412,7 @@ export default {
         .attr("race", (d) => d.race)
         .style("fill-opacity", 1e-6)
         .style("fill", (d) => vueComponent.getFillColor(d))
-        .style("stroke-width", function (d) {
+        .style("stroke-width", function(d) {
           return d.race !== "Total Number" ? 0.5 : 0;
         })
         .on("mouseover", this.mouseover)
@@ -429,16 +429,16 @@ export default {
         .attr("font-size", this.yLabelSize)
         .attr("class", "total-number")
         .style("opacity", 1e-6)
-        .attr("x", function (d) {
+        .attr("x", function(d) {
           return scale.x(vueComponent.races.indexOf(d.race));
         })
-        .attr("y", function (d) {
+        .attr("y", function(d) {
           return (
             scale.y(vueComponent.rowOrder.indexOf(d.department)) +
             0.5 * scale.y.bandwidth()
           );
         })
-        .text(function (d) {
+        .text(function(d) {
           return d.race === "Total Number" ? d3.format(",.0f")(+d.count) : "";
         })
         .attr("class", "total-number-text")
@@ -455,14 +455,14 @@ export default {
       svg
         .selectAll("rect")
         .transition(t)
-        .attr("y", function (d) {
+        .attr("y", function(d) {
           return scale.y(vueComponent.rowOrder.indexOf(d.department));
         });
 
       let gy = svg.select(".gy");
       gy.transition(t)
         .selectAll(".tick")
-        .attr("transform", function () {
+        .attr("transform", function() {
           let oldLabel = d3.select(this).text();
           let j = vueComponent.rowOrder.indexOf(oldLabel);
           let y = scale.y(j) + 0.5 * scale.y.bandwidth();
@@ -472,7 +472,7 @@ export default {
       svg
         .transition(t)
         .selectAll(".total-number-text")
-        .attr("y", function (d) {
+        .attr("y", function(d) {
           let j = vueComponent.rowOrder.indexOf(d.department);
           return scale.y(j) + 0.5 * scale.y.bandwidth();
         });
@@ -480,7 +480,6 @@ export default {
   },
 };
 </script>
-
 
 <style>
 #heatmap-wrapper-indep {
