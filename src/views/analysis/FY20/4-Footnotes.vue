@@ -3,10 +3,9 @@
     <h2 class="section-title mt-3">Footnotes</h2>
     <hr class="titlebar" />
 
-    <p>
-      <span> <a href="#ref1" id="fn1">[1]</a></span>
-      <span class="ml-1">
-        See the
+    <div class="mt-2">
+      <footnote
+        text='See the
         <a
           href="https://controller.phila.gov/philadelphia-audits/fy18-exempt-employee-diversity/"
           target="_blank"
@@ -19,49 +18,35 @@
           target="_blank"
           ><span>FY19 Exempt Diversity Review</span>
           <i class="ml-1 fas fa-external-link-alt"></i></a
-        >.
-      </span>
-    </p>
-    <p>
-      <span><a href="#ref2" id="fn2">[2]</a></span>
-      <span class="ml-1"
-        >Note that the department that hires an employee is not necessarily
+        >.'
+      />
+
+      <footnote
+        text="Note that the department that hires an employee is not necessarily
         responsible for paying that employee. As hiring information has been
         unavailable in past years, employees are associated with the department
         that pays them to allow for year-over-year comparisons and ensure
-        accurate data quality.</span
-      >
-    </p>
-    <p>
-      <span>
-        <a href="#ref3" id="fn3">[3]</a>
-      </span>
-      <span class="ml-1">
-        Data for new exempt hires includes employees new to the City of
+        accurate data quality."
+      />
+
+      <footnote
+        text="Data for new exempt hires includes employees new to the City of
         Philadelphia as well as employees who have moved between City
-        departments.
-      </span>
-    </p>
-    <p>
-      <span>
-        <a href="#ref4" id="fn4">[4]</a>
-      </span>
-      <span class="ml-1">
-        Source:
+        departments."
+      />
+
+      <footnote
+        text='Source:
         <a
           href="https://data.census.gov/cedsci/table?q=race%20ethnicity&g=0500000US42101&tid=DECENNIALPL2020.P2"
           target="_blank"
           ><span>2020 Decennial Census Redistricting data</span>
           <i class="ml-1 fas fa-external-link-alt"></i></a
-        >.
-      </span>
-    </p>
-    <p>
-      <span>
-        <a href="#ref5" id="fn5">[5]</a>
-      </span>
-      <span class="ml-1"
-        >See the
+        >.'
+      />
+
+      <footnote
+        text='See the
         <a
           href="https://controller.phila.gov/wp-content/uploads/2021/10/Exempt-Hiring-Playbook.pdf"
           target="_blank"
@@ -69,28 +54,32 @@
             >“Exempt Hiring Guide for Building a Talented, Diverse
             Workforce.”</span
           ><i class="ml-1 fas fa-external-link-alt"></i
-        ></a>
-      </span>
-    </p>
-    <p>
-      <span><a href="#ref6" id="fn6">[6]</a></span>
-      <span class="ml-1"
-        >Follow-up questions were directed to the department responsible for the
+        ></a>'
+      />
+
+      <footnote
+        text="Follow-up questions were directed to the department responsible for the
         hiring process for new hires in FY20. This department is not necessarily
         the same as the department that is responsible for paying the employee.
         By using hiring department information, the Controller’s Office is able
-        to more closely examine the City’s hiring process for exempt employees.
-      </span>
-    </p>
+        to more closely examine the City’s hiring process for exempt employees."
+      />
+    </div>
   </div>
 </template>
 
 <script>
-export default { name: "Footnotes" };
+import Footnote from "@/components/Footnote";
+
+export default { name: "Footnotes", components: { Footnote } };
 </script>
 
 <style>
 #footnotes {
   margin-top: 100px;
+}
+
+div[id^="footnote-"] {
+  margin-top: 0.5rem;
 }
 </style>

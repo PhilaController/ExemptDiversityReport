@@ -17,12 +17,10 @@
         workforce was White, a modest 1% decrease from FY18. For comparison,
         Philadelphia's population is 34% White and 66% diverse (Black or African
         American: 40.1%; Hispanic: 15.2%; Asian: 7.3%; Other: 3.1%), according
-        to 2018 Census data.<sup>
-          <a class="footnote" href="#fn4" id="ref4">[4]</a>
-        </sup>
-        Making up only 7.4% of the total exempt workforce, Hispanic employees in
-        the Mayoral administration were the most underrepresented group relative
-        to the overall city population, which is 15.2% Hispanic.
+        to 2018 Census data.<footnote-reference /> Making up only 7.4% of the
+        total exempt workforce, Hispanic employees in the Mayoral administration
+        were the most underrepresented group relative to the overall city
+        population, which is 15.2% Hispanic.
       </p>
 
       <p>
@@ -120,14 +118,11 @@
         percentage point. Diverse employees were significantly underrepresented
         in the Law Department for the past two years, making up 34.2% of Law
         Department employees in FY19 while making up 66% of the city’s overall
-        population.<sup>
-          <a class="footnote" href="#fn5" id="ref5">[5]</a>
-        </sup>
-        Diverse representation increased modestly in the MDO and OIT between
-        FY18 and FY19, with OIT having the largest share of diverse employees
-        among the six largest exempt workforces at 58.3%. City Council has the
-        second highest share of diverse employees at 57.5% in FY19, a modest
-        increase from 55% in FY18.
+        population.<footnote-reference /> Diverse representation increased
+        modestly in the MDO and OIT between FY18 and FY19, with OIT having the
+        largest share of diverse employees among the six largest exempt
+        workforces at 58.3%. City Council has the second highest share of
+        diverse employees at 57.5% in FY19, a modest increase from 55% in FY18.
       </p>
 
       <p>
@@ -160,8 +155,15 @@
 </template>
 
 <script>
-export default { name: "MainChanges" };
+import FootnoteReference from "@/components/FootnoteReference";
+
+export default {
+  name: "MainChanges",
+  components: { FootnoteReference },
+  data() {
+    return { footnoteStart: 4 };
+  },
+};
 </script>
 
-<style>
-</style>
+<style></style>

@@ -20,29 +20,24 @@
         >diversity review from last year</a
       >, which examined the demographics of the exempt workforce at the end of
       FY18. The data for this year’s review was compiled by the City
-      Controller’s Office from the City’s new payroll system.<sup
-        ><a class="footnote" href="#fn1" id="ref1">[1]</a>
-      </sup>
+      Controller’s Office from the City’s new payroll system.<footnote-reference />
       Similar to last year’s report, exempt employees are shown in relation to
-      the department from which they are paid.<sup
-        ><a class="footnote" href="#fn2" id="ref2">[2]</a>
-      </sup>
+      the department from which they are paid.<footnote-reference />
     </p>
 
     <p>
       To evaluate the City's progress toward its diversity goals and the
       diversity of its leadership, the data is broken out into four important
-      categories: all exempt employees, exempt employees hired in FY19,<sup
-        ><a class="footnote" href="#fn3" id="ref3">[3]</a>
-      </sup>
-      exempt employees with salaries greater than $90,000, and the subset of new
-      hires with salaries greater than $90,000. Data is examined separately for
-      City departments that fall under the Mayor’s authority and for
-      independently elected offices. In FY19, departments in the Mayoral
-      administration employed 1,584 exempt workers, with about 32% earning more
-      than $90,000 annually. There were 2,977 exempt employees in independent
-      offices, concentrated primarily in the First Judicial District (2,216
-      employees) and the District Attorney’s Office (471 employees).
+      categories: all exempt employees, exempt employees hired in
+      FY19,<footnote-reference /> exempt employees with salaries greater than
+      $90,000, and the subset of new hires with salaries greater than $90,000.
+      Data is examined separately for City departments that fall under the
+      Mayor’s authority and for independently elected offices. In FY19,
+      departments in the Mayoral administration employed 1,584 exempt workers,
+      with about 32% earning more than $90,000 annually. There were 2,977 exempt
+      employees in independent offices, concentrated primarily in the First
+      Judicial District (2,216 employees) and the District Attorney’s Office
+      (471 employees).
     </p>
 
     <!-- Link -->
@@ -57,7 +52,15 @@
 </template>
 
 <script>
-export default { name: "Intro" };
+import FootnoteReference from "@/components/FootnoteReference";
+
+export default {
+  name: "Intro",
+  components: { FootnoteReference },
+  data() {
+    return { footnoteStart: 1 };
+  },
+};
 </script>
 
 <style>

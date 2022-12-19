@@ -12,20 +12,18 @@
     <p>
       This review visualizes the racial breakdown of Philadelphia's exempt
       workforce at the end of Fiscal Year 2018 (FY18). The data was compiled by
-      the Controller's Office from the City’s legacy payroll system.<sup
-        ><a href="#fn1" id="ref1">[1]</a></sup
-      >
-      Employees are shown in relation to the department from which they are
-      paid. The data is accurate as of June 24, 2018.
+      the Controller's Office from the City’s legacy payroll
+      system.<footnote-reference /> Employees are shown in relation to the
+      department from which they are paid. The data is accurate as of June 24,
+      2018.
     </p>
     <p>
       To evaluate the City's progress toward its diversity goals and the
       diversity of its leadership, the data below can be broken out into four
       important categories: all exempt employees, exempt employees hired in
-      FY18,<sup><a href="#fn2" id="ref2">[2]</a></sup>
-      exempt employees with salaries greater than $90,000, and the subset of new
-      hires with salaries greater than $90,000. Data for these categories can be
-      selected using the buttons below.
+      FY18,<footnote-reference /> exempt employees with salaries greater than
+      $90,000, and the subset of new hires with salaries greater than $90,000.
+      Data for these categories can be selected using the buttons below.
     </p>
     <p>
       The diversity data is presented as two separate heatmaps, one for all
@@ -51,7 +49,15 @@
 </template>
 
 <script>
-export default { name: "Intro" };
+import FootnoteReference from "@/components/FootnoteReference";
+
+export default {
+  name: "Intro",
+  components: { FootnoteReference },
+  data() {
+    return { footnoteStart: 1 };
+  },
+};
 </script>
 
 <style>
@@ -60,4 +66,3 @@ export default { name: "Intro" };
   color: #2176d2;
 }
 </style>
-

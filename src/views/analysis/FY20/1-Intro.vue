@@ -13,27 +13,21 @@
       This review examines the racial breakdown of Philadelphia's exempt
       workforce at the end of fiscal year 2020 (FY20). It builds on previous
       reports by the Controller’s Office, which examined the demographics of the
-      exempt workforce at the end of FY18 and FY19.<sup
-        ><a href="#fn1" id="ref1">[1]</a></sup
-      >
-      The data for this year’s review was compiled from the City’s OnePhilly
-      payroll system, and departments were asked to verify its accuracy before
+      exempt workforce at the end of FY18 and FY19.<footnote-reference /> The
+      data for this year’s review was compiled from the City’s OnePhilly payroll
+      system, and departments were asked to verify its accuracy before
       finalizing. Similar to previous reports, exempt employees are shown in
-      relation to the department from which they are paid.<sup
-        ><a href="#fn2" id="ref2">[2]</a></sup
-      >
+      relation to the department from which they are paid.<footnote-reference />
     </p>
     <p>
       To evaluate the City's progress toward its diversity goals and the
       diversity of its leadership, the data is broken out into four important
-      categories: all exempt employees, new exempt hires in FY20,<sup
-        ><a href="#fn3" id="ref3">[3]</a>
-      </sup>
-      exempt employees with salaries of at least $90,000 (referred to as
-      “executive” positions) and the subset of new hires with salaries of at
-      least $90,000. The diversity of the City’s exempt workforce is examined
-      separately for City departments that fall under the Mayor’s authority and
-      for independent offices.
+      categories: all exempt employees, new exempt hires in
+      FY20,<footnote-reference /> exempt employees with salaries of at least
+      $90,000 (referred to as “executive” positions) and the subset of new hires
+      with salaries of at least $90,000. The diversity of the City’s exempt
+      workforce is examined separately for City departments that fall under the
+      Mayor’s authority and for independent offices.
     </p>
 
     <!-- Link -->
@@ -48,7 +42,15 @@
 </template>
 
 <script>
-export default { name: "Intro" };
+import FootnoteReference from "@/components/FootnoteReference";
+
+export default {
+  name: "Intro",
+  components: { FootnoteReference },
+  data() {
+    return { footnoteStart: 1 };
+  },
+};
 </script>
 
 <style>

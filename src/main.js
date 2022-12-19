@@ -1,19 +1,24 @@
-import Vue from 'vue'
-import vuetify from '@/plugins/vuetify'
+import Vue from "vue";
+import vuetify from "@/plugins/vuetify";
 import router from "@/plugins/router";
-import App from '@/App.vue'
-import $ from "jquery"
-import { descending } from 'd3-array';
-import { getDownloadURL, getReportTag } from "@/utils"
+import App from "@/App.vue";
+import $ from "jquery";
+import { descending } from "d3-array";
+import { getDownloadURL, getReportTag } from "@/utils";
 
-Vue.config.productionTip = false
+// Vue scroll to
+let VueScrollTo = require("vue-scrollto");
+let pad = 10;
+let offset = -($("#site-navigation").outerHeight() + pad);
+Vue.use(VueScrollTo, { offset: offset });
+
+Vue.config.productionTip = false;
 
 // load and set the HTML template we are using
 let audit_content = $(".audit-content");
 audit_content.html(`<div id="app"></div>`);
 
 function add_help_message() {
-
   if ($(".help-message").length > 0) return;
 
   let helpMessage = `<p class='help-message'>
@@ -24,7 +29,6 @@ function add_help_message() {
 }
 
 async function add_archived_reports_button() {
-
   // Create a dropdown element and button
   let dropdown = $(`<div class="dropdown mt-2"></div>`);
   let button = $(`<button class="btn btn-primary btn-block dropdown-toggle" 
@@ -40,7 +44,9 @@ async function add_archived_reports_button() {
   );
 
   // Load the data
-  let response = await fetch("https://raw.githubusercontent.com/PhiladelphiaController/ExemptDiversityReport/main/src/data/diversity-reports.json");
+  let response = await fetch(
+    "https://raw.githubusercontent.com/PhiladelphiaController/ExemptDiversityReport/main/src/data/diversity-reports.json"
+  );
   let data = await response.json();
 
   // Sort the data in descending order
@@ -52,7 +58,7 @@ async function add_archived_reports_button() {
   // Add each URL
   let baseURL = "https://controller.phila.gov/philadelphia-audits/";
   for (let i = 0; i < data.length; i++) {
-    let item = data[i]
+    let item = data[i];
 
     // Skip the current report
     if (item.label === thisReport) continue;
@@ -75,11 +81,10 @@ async function add_archived_reports_button() {
 }
 
 function add_data_button() {
-
   if ($("#dataDownloadButton").length > 0) return;
 
   // add a new button
-  let thisReport = getReportTag()
+  let thisReport = getReportTag();
   let url = getDownloadURL(`exempt-diversity-data-${thisReport}`);
   let btn = `<a id="dataDownloadButton" href="${url}" class="btn btn-primary btn-block btn-block">
             <i class="fas fa-download"></i>
@@ -90,38 +95,22 @@ function add_data_button() {
   $(".entry-header .btn").after(btn);
 }
 
-function adjust_header_layout() {
-  $(".entry-header .row")
-    .first()
-    .addClass("d-flex ml-2 mr-2 flex-sm-row flex-column justify-content-between flex-nowrap");
-
-  $(".entry-header .col-sm-9").removeClass("col-sm-9")
-  $(".entry-header .col-sm-3")
-    .removeClass("col-sm-3")
-}
-
 new Vue({
   vuetify,
   router,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
 
-// When document is loaded 
-$(document).ready(function () {
-
+// When document is loaded
+$(document).ready(function() {
   // Add the buttons
-  add_data_button()
+  add_data_button();
   add_archived_reports_button();
 
   // add a help message
   add_help_message();
 
-  // adjust the header layout
-  adjust_header_layout();
-
   // Turn off FA
   window.FontAwesome.config.observeMutations = false;
   window.FontAwesome.config.searchPseudoElements = false;
-
-
-})
+});

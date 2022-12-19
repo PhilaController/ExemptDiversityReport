@@ -10,13 +10,10 @@
       fiscal year. As seen in the figure below, White employees were
       overrepresented and accounted for 54.2% of the total workforce, well above
       the 34.3% share of Philadelphia’s population according to 2020 Census
-      data.<sup>
-        <a class="footnote" href="#fn4" id="ref4">[4]</a>
-      </sup>
-      Diverse representation decreases when focusing only on exempt positions
-      with salaries of at least $90,000. For these executive positions, White
-      employees accounted for 59.8% of the total, an increase of one percentage
-      point from FY19 to FY20.
+      data.<footnote-reference /> Diverse representation decreases when focusing
+      only on exempt positions with salaries of at least $90,000. For these
+      executive positions, White employees accounted for 59.8% of the total, an
+      increase of one percentage point from FY19 to FY20.
     </p>
 
     <!-- Figure 1 -->
@@ -33,15 +30,13 @@
       <h3>The Mayoral Administration</h3>
       <p>
         In 2017, Mayor Kenney’s administration created the Exempt Employee
-        Hiring Guidelines<sup>
-          <a href="#fn5" id="ref5">[5]</a>
-        </sup>
-        in an effort to increase diverse representation in the City’s exempt
-        workforce. While the guidelines are not mandatory, Mayoral departments
-        are expected to follow the recommendations for all exempt hires when
-        possible. This section focuses only on the diversity of the workforce in
-        these Mayoral departments, which included 1,687 exempt employees in
-        FY20, and excludes exempt employees in independent offices.
+        Hiring Guidelines<footnote-reference /> in an effort to increase diverse
+        representation in the City’s exempt workforce. While the guidelines are
+        not mandatory, Mayoral departments are expected to follow the
+        recommendations for all exempt hires when possible. This section focuses
+        only on the diversity of the workforce in these Mayoral departments,
+        which included 1,687 exempt employees in FY20, and excludes exempt
+        employees in independent offices.
       </p>
 
       <p>
@@ -124,23 +119,22 @@
       <p>
         To better examine diversity trends for new hires, the City Controller’s
         Office requested additional information from departments with
-        particularly low diverse representation among new hires in FY20.<sup>
-          <a href="#fn6" id="ref6">[6]</a>
-        </sup>
-        Given that diversity statistics can vary from year to year, we selected
-        five departments to evaluate the effectiveness of the City’s hiring
-        process. These departments (the FJD, DAO, MDO, the Law Department and
-        Public Health) hired at least 20 new employees with the exception of
-        Public Health, which hired only seven employees, six of whom were White.
-        For each new hire in these departments, the Controller’s Office asked a
-        series of questions about the hiring process and adherence to the Exempt
-        Employee Hiring Guidelines. Except for the FJD, each of these
-        departments responded that they followed the Hiring Guidelines for new
-        exempt hires in FY20. The FJD, which is an independent office and is not
-        subject to the recommended policies in the guidelines, instead outlined
-        their diversity initiatives, which include a recently hired Diversity,
-        Equity, and Inclusion Chief and the creation of a unit to focus
-        specifically on maintaining fair and diverse hiring practices.
+        particularly low diverse representation among new hires in
+        FY20.<footnote-reference /> Given that diversity statistics can vary
+        from year to year, we selected five departments to evaluate the
+        effectiveness of the City’s hiring process. These departments (the FJD,
+        DAO, MDO, the Law Department and Public Health) hired at least 20 new
+        employees with the exception of Public Health, which hired only seven
+        employees, six of whom were White. For each new hire in these
+        departments, the Controller’s Office asked a series of questions about
+        the hiring process and adherence to the Exempt Employee Hiring
+        Guidelines. Except for the FJD, each of these departments responded that
+        they followed the Hiring Guidelines for new exempt hires in FY20. The
+        FJD, which is an independent office and is not subject to the
+        recommended policies in the guidelines, instead outlined their diversity
+        initiatives, which include a recently hired Diversity, Equity, and
+        Inclusion Chief and the creation of a unit to focus specifically on
+        maintaining fair and diverse hiring practices.
       </p>
       <p>
         Collectively, these five departments hired 332 exempt employees in FY20,
@@ -236,6 +230,13 @@
 </template>
 
 <script>
-export default { name: "DetailedAnalysis" };
-</script>
+import FootnoteReference from "@/components/FootnoteReference";
 
+export default {
+  name: "DetailedAnalysis",
+  components: { FootnoteReference },
+  data() {
+    return { footnoteStart: 4 };
+  },
+};
+</script>

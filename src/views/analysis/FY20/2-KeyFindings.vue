@@ -71,4 +71,3 @@
 <script>
 export default { name: "KeyFindings" };
 </script>
-
